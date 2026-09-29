@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/flightscry_canvas">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/flightscry_navy"
+                android:orientation="vertical"
+                android:paddingStart="24dp"
+                android:paddingTop="26dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="32dp">
+
+                <net.skyscanner.backpack.text.BpkText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.04"
+                    android:text="FLIGHTSCRY"
+                    android:textColor="#9BDDF5"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <net.skyscanner.backpack.text.BpkText
+                    style="@style/bpkTextHeading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Your next adventure"
+                    android:textColor="#FFFFFF" />
+
+                <net.skyscanner.backpack.text.BpkText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Tuesday, 24 June 2025 · One-way"
+                    android:textColor="#D5E4EF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="18dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="18dp">
+
+                <net.skyscanner.backpack.text.BpkText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="FLIGHT INFORMATION"
+                    android:textColor="@color/flightscry_muted"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <net.skyscanner.backpack.card.BpkCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cornerStyle="large"
+                    app:padded="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="18dp">
+
+                        <TextView
+                            android:layout_width="46dp"
+                            android:layout_height="46dp"
+                            android:background="#E8F4FF"
+                            android:gravity="center"
+                            android:text="✈"
+                            android:textColor="@color/flightscry_blue"
+                            android:textSize="23sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <net.skyscanner.backpack.text.BpkText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="British Airways"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <net.skyscanner.backpack.text.BpkText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="Flight number"
+                                android:textColor="@color/flightscry_muted"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <net.skyscanner.backpack.text.BpkText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BA 117"
+                            android:textColor="@color/flightscry_navy"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </net.skyscanner.backpack.card.BpkCardView>
+
+                <net.skyscanner.backpack.text.BpkText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="YOUR ROUTE"
+                    android:textColor="@color/flightscry_muted"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <net.skyscanner.backpack.card.BpkCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cornerStyle="large"
+                    app:padded="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="18dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                android:background="#EAF4FF"
+                                android:gravity="center"
+                                android:text="↗"
+                                android:textColor="@color/flightscry_blue"
+                                android:textSize="20sp" />
+
+                            <net.skyscanner.backpack.text.BpkText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:text="DEPARTURE"
+                                android:textColor="@color/flightscry_muted"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <net.skyscanner.backpack.text.BpkText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/flightscry_green_bg"
+                                android:paddingStart="10dp"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="5dp"
+                                android:text="ON TIME"
+                                android:textColor="@color/flightscry_green"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <net.skyscanner.backpack.text.BpkText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="LHR"
+                                android:textColor="@color/flightscry_navy"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <net.skyscanner.backpack.text.BpkText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="London Heathrow"
+                                android:textColor="@color/flightscry_muted"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <net.skyscanner.backpack.text.BpkText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:text="10:35"
+                            android:textColor="@color/flightscry_navy"
+                            android:textSize="21sp"
+                            android:textStyle="bold" />
+
+                        <net.skyscanner.backpack.text.BpkText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Terminal 5 · Gate B32"
+                            android:textColor="@color/flightscry_muted"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </net.skyscanner.backpack.card.BpkCardView>
+
+                <net.skyscanner.backpack.card.BpkCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cornerStyle="large"
+                    app:padded="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="18dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                android:background="#EAF4FF"
+                                android:gravity="center"
+                                android:text="↙"
+                                android:textColor="@color/flightscry_blue"
+                                android:textSize="20sp" />
+
+                            <net.skyscanner.backpack.text.BpkText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:text="ARRIVAL"
+                                android:textColor="@color/flightscry_muted"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <net.skyscanner.backpack.text.BpkText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="JFK"
+                                android:textColor="@color/flightscry_navy"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <net.skyscanner.backpack.text.BpkText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="New York"
+                                android:textColor="@color/flightscry_muted"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <net.skyscanner.backpack.text.BpkText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:text="13:20"
+                            android:textColor="@color/flightscry_navy"
+                            android:textSize="21sp"
+                            android:textStyle="bold" />
+
+                        <net.skyscanner.backpack.text.BpkText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Terminal 8 · Local time"
+                            android:textColor="@color/flightscry_muted"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </net.skyscanner.backpack.card.BpkCardView>
+
+                <net.skyscanner.backpack.text.BpkText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="18dp"
+                    android:text="7h 45m   ·   Non-stop"
+                    android:textColor="@color/flightscry_muted"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
